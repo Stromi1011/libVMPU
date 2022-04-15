@@ -5,7 +5,7 @@ By now this small lib should be able to configure the Freefall- and Motion- Inte
 In the future this might be expanded to handle the other interrupt-sources aswell.
 
 At the moment this program is based on STM-HAL drivers.
-Should you need that functionality with different drivers simply change the MPUwriteByteTo(...) and MPUreadFromAddress(...) and remove the includes/externs in the .h file to suit your application.
+Should you need that functionality with different drivers simply change the MPUwriteByteTo(...) and MPUreadFromAddress(...) to suit your application and remove the includes/externs in the .h file.
 
 The main files are only included as an example.
 
