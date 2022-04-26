@@ -5,17 +5,13 @@ extern "C"{
 #endif
 
 
-//expects fully initialized i2c Interface and manages MPU6050 Interrupts
 
 #include "stm32f0xx_hal.h"
-//#include "MPU60X0_REG.h"
-
-typedef enum VMPU_STATUS{VMPU_OK,VMPU_ERR}VMPU_STATUS;
-
 extern I2C_HandleTypeDef hi2c1;
 extern UART_HandleTypeDef huart2;
 
-#define inDevelopment
+typedef enum VMPU_STATUS{VMPU_OK,VMPU_ERR}VMPU_STATUS;
+
 
 #define VMPU_ADDRESS_AD0
 #ifdef VMPU_ADDRESS_AD0 
